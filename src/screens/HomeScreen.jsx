@@ -3,6 +3,8 @@ import React from "react";
 import tw from "tailwind-react-native-classnames";
 import NavOptions from "../components/NavOptions";
 
+import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
+
 const HomeScreen = () => {
   return (
     <SafeAreaView style={tw`bg-white h-full`}>
@@ -17,6 +19,7 @@ const HomeScreen = () => {
             uri: "https://links.papareact.com/gzs",
           }}
         />
+        {/* <GooglePlacesAutocomplete /> */}
         <NavOptions />
       </View>
     </SafeAreaView>
